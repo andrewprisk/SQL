@@ -1,0 +1,1 @@
+SELECT * FROM sysobjects WHERE xType = 'TR' order by crdate desc

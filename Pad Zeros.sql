@@ -1,0 +1,3 @@
+SELECT REPLACE(STR(column, 5), SPACE(1), '0') FROM Table 
+ 
+SELECT RIGHT('00000' + RTRIM(column), 5) FROM Table
