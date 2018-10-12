@@ -1,6 +1,5 @@
-SELECT EecEmpNo, 
- COUNT(EecEmpNo) AS NumOccurrences
-FROM v_EMPYMAS_REPLICA 
-WHERE EecCoID<>'83UVU' and EecEmplStatus='A'
-GROUP BY EecEmpNo
-HAVING (COUNT(EecEmpNo) > 1)
+SELECT EmpNo, 
+ COUNT(EmpNo) AS NumOccurrences
+FROM v_EMPYMAS
+GROUP BY EmpNo
+HAVING (COUNT(EmpNo) > 1)
